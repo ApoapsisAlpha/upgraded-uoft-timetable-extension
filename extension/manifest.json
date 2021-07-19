@@ -1,0 +1,17 @@
+{
+  "name": "Upgraded UofT A&S Timetable",
+  "description": "An upgraded version of the UofT Arts and Science Timetable.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "web_accessible_resources": [{
+    "resources": ["script.js"],
+    "matches": ["https://timetable.iit.artsci.utoronto.ca/*"]
+  }],
+  "content_scripts": [
+    {
+      "matches": ["https://timetable.iit.artsci.utoronto.ca/*"],
+      "run_at": "document_end",
+      "js": ["contentScript.js"]
+    }
+  ]
+}
