@@ -11,7 +11,7 @@ function loadTimetable() {
     generateToolbarSelectionList(meetingListDataS, 'S');
 
     toggleViewTimetablePlanBtn();
-    console.log('Successfully loaded timetable!')
+    console.log('Successfully loaded timetable!');
 }
 
 function saveTimetable() {
@@ -20,4 +20,4 @@ function saveTimetable() {
 }
 
 loadTimetable();
-setTimeout(saveTimetable, 3000);
+window.setInterval(saveTimetable, 3000);
