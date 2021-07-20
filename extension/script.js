@@ -2,8 +2,8 @@ function loadTimetable() {
     $('#calControl').css({'position':'sticky'});
     $(window).off("scroll");
 
-    meetingListDataF = JSON.parse(window.localStorage.getItem('meetingListDataF'));
-    meetingListDataS = JSON.parse(window.localStorage.getItem('meetingListDataS'));
+    meetingListDataF = JSON.parse(window.localStorage.getItem('meetingListDataF')) ?? [];
+    meetingListDataS = JSON.parse(window.localStorage.getItem('meetingListDataS')) ?? [];
 
     $('.calPreview').removeClass('hidden');
         
